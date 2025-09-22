@@ -1,5 +1,6 @@
 console.log("Singleton loaded!")
 
+// Example 1
 class Singleton {
     constructor() {
         console.log("entrando a constructor")
@@ -28,7 +29,7 @@ console.log(singleton3.random)
 console.log(singleton === singleton2)
 console.log(singleton3 === singleton2)
 
-
+// Example 2
 class WeekDays {
     days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
     daysEs = ['Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sa', 'Do']
