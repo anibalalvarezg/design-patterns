@@ -51,3 +51,28 @@ console.log(names)
 const numbers = [5,4,7,1,10]
 const total = numbers.reduce((acc, number) => acc + number, 0)
 console.log(total)
+
+// Classes and Objects (OOP)
+class Drink {
+    constructor(name) {
+        this.name = name;
+    }
+
+    info() {
+        return "Drink's name is " + this.name;
+    }
+}
+
+// Functional
+function Drink2(name) {
+    this.name = name;
+    this.info = () => {
+        return "Drink's name is " + this.name;
+    }
+}
+
+const drink = new Drink("Negroni")
+const drink2 = new Drink2("Agua")
+console.log(drink.info())
+console.log(drink2.info())
+
