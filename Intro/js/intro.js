@@ -76,3 +76,17 @@ const drink2 = new Drink2("Agua")
 console.log(drink.info())
 console.log(drink2.info())
 
+// Inheritance
+class Beer extends Drink {
+    constructor(name, alcohol) {
+        super(name);
+        this.alcohol = alcohol;
+    }
+
+    info() {
+        return super.info() + " and AVB is " + this.alcohol;
+    }
+}
+
+const beer = new Beer("Corona", 5.0)
+console.log(beer.info())
