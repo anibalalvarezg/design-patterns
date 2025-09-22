@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",               // versión de JS a la que compila
+    "module": "CommonJS",             // sistema de módulos clásico
+    "moduleResolution": "node",       // cómo buscar imports
+    "esModuleInterop": true,          // permite importar default de libs comunes
+    "strict": true,                   // activa chequeos estrictos de tipos
+    "skipLibCheck": true,             // acelera compilación
+    "forceConsistentCasingInFileNames": true, // evita problemas en distintos OS
+    "outDir": "dist"                  // opcional: carpeta de salida si compilas
+  },
+  "include": ["./**/*.ts"],
+  "exclude": ["node_modules"]
+}
